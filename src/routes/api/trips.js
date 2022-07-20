@@ -5,6 +5,6 @@ const { createTrip, deleteTripById } = require("../../controllers/api/trips");
 const router = Router();
 
 router.post("/", createTrip);
-router.get("/", deleteTripById);
+router.delete("/:id", deleteTripById);
 
 module.exports = router;
